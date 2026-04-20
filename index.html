@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Piso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Simulador de Piso Modular</h2>
+
+<div class="top-controls">
+  <input type="number" id="largura" placeholder="Largura (m)" step="0.3">
+  <input type="number" id="comprimento" placeholder="Comprimento (m)" step="0.3">
+  <button onclick="gerarGrid()">Gerar</button>
+</div>
+
+<div class="toolbar">
+  <button onclick="setCor('white')" style="background:white"></button>
+  <button onclick="setCor('green')" style="background:green"></button>
+  <button onclick="setCor('pink')" style="background:pink"></button>
+  <button onclick="setModo('borracha')">🧽</button>
+  <button onclick="limpar()">🗑️</button>
+</div>
+
+<div class="toolbar">
+  <button onclick="modeloXadrez()">Xadrez</button>
+  <button onclick="modeloMoldura()">Moldura</button>
+  <button onclick="modeloListras()">Listras</button>
+  <button onclick="rotacionar()">🔄 Rotacionar</button>
+</div>
+
+<div class="toolbar">
+  <button onclick="salvarImagem()">📸 Imagem</button>
+  <button onclick="compartilhar()">📤</button>
+  <button onclick="salvarProjeto()">💾</button>
+</div>
+
+<div class="container">
+  <div id="regua-top"></div>
+  <div id="regua-left"></div>
+  <div id="grid"></div>
+</div>
+
+<div id="info"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
