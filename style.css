@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* TOOLBAR estilo Word */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+.group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+/* ÁREA DO GRID CENTRALIZADA */
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.canvas {
+  background: white;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: auto;
+  max-width: 95vw;
+  max-height: 70vh;
+}
+
+/* GRID + RÉGUA */
+#grid {
+  display: grid;
+}
+
+#regua-top {
+  display: grid;
+  margin-left: 40px;
+}
+
+#regua-left {
+  display: grid;
+  float: left;
+}
+
+.cell {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.regua-cell {
+  font-size: 9px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .cell {
+    width: 22px;
+    height: 22px;
+  }
+}
