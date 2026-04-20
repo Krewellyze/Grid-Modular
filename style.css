@@ -1,0 +1,33 @@
+
+body {
+  font-family: Arial;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: 40px auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#grid {
+  display: grid;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.regua-cell {
+  font-size: 10px;
+}
+
+#info {
+  margin: 15px;
+}
