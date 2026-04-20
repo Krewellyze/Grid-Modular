@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Piso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="toolbar">
+
+  <div class="group">
+    <input type="number" id="largura" placeholder="Largura (m)" step="0.3">
+    <input type="number" id="comprimento" placeholder="Comprimento (m)" step="0.3">
+    <button onclick="gerarGrid()">Gerar</button>
+  </div>
+
+  <div class="group">
+    <input type="color" id="colorPicker" onchange="setCor(this.value)">
+    <button onclick="setModo('borracha')">🧽</button>
+    <button onclick="limpar()">🗑️</button>
+  </div>
+
+  <div class="group">
+    <button onclick="modeloXadrez()">Xadrez</button>
+    <button onclick="modeloMoldura()">Moldura</button>
+    <button onclick="modeloListras()">Listras</button>
+  </div>
+
+  <div class="group">
+    <button onclick="rotacionar()">🔄</button>
+    <button onclick="salvarImagem()">📸</button>
+  </div>
+
+</header>
+
+<div class="canvas-wrapper">
+  <div class="canvas">
+    <div id="regua-top"></div>
+    <div id="regua-left"></div>
+    <div id="grid"></div>
+  </div>
+</div>
+
+<div id="info"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
