@@ -17,24 +17,9 @@
 </div>
 
 <div class="toolbar">
-  <button onclick="setCor('white')" style="background:white"></button>
-  <button onclick="setCor('green')" style="background:green"></button>
-  <button onclick="setCor('pink')" style="background:pink"></button>
+  <input type="color" id="colorPicker" onchange="setCor(this.value)">
   <button onclick="setModo('borracha')">🧽</button>
   <button onclick="limpar()">🗑️</button>
-</div>
-
-<div class="toolbar">
-  <button onclick="modeloXadrez()">Xadrez</button>
-  <button onclick="modeloMoldura()">Moldura</button>
-  <button onclick="modeloListras()">Listras</button>
-  <button onclick="rotacionar()">🔄 Rotacionar</button>
-</div>
-
-<div class="toolbar">
-  <button onclick="salvarImagem()">📸 Imagem</button>
-  <button onclick="compartilhar()">📤</button>
-  <button onclick="salvarProjeto()">💾</button>
 </div>
 
 <div class="container">
